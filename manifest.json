@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "Init React project",
+  "description": "Description",
+  "version": "0.0.1",
+  "author": "Alex Rudakov",
+  "browser_action": {
+    "default_title": ""
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "jquery.min.js",
+        "app.js"
+      ]
+    }
+  ],
+  "permissions": ["tabs"]
+}
